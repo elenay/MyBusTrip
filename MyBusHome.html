@@ -22,26 +22,38 @@
             $.fn.bootstrapBtn = bootstrapButton;
             $( "#datepicker1" ).datepicker();
             $( "#datepicker2" ).datepicker();
-            $( "#format" ).buttonset();
+            $( "#transport" ).buttonset();
             $( "#format1" ).buttonset();
         });
     </script>
     <style>
-        #format { margin-top: 2em; }
+
     </style>
 </head>
 <body>
 <h1>Welcome to My Bus! start planning your trip here:</h1>
 
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="inputCountries" class="col-sm-3 control-label">The country/countries of destination:</label>
+            <div class="col-sm-2">
+                <input class="form-control" id="inputCountries" placeholder="type a country name">
+            </div>
+        </div>
 
-The country/countries of destination: <input type="text" name="The country/countries of destination:"><br>
-The dates of the trip:
+  <div class="form-group">
+      <label for="datepicker1" class="col-sm-3 control-label">The dates of the trip:</label>
+      <div class="col-sm-3">
+          <input class="form-control" id="datepicker1" placeholder="From">
+          </div>
+      <div class="col-sm-3">
+          <input class="form-control" id="datepicker2" placeholder="To">
+      </div>
+      </div>
 
-<p>From: <input type="text" id="datepicker1"> To: <input type="text" id="datepicker2"></p>
-<br>
-The transport you'll use:
-<form>
-    <div id="format">
+<div class="form-group">
+ <label for="transport" class="col-sm-3 control-label">The transport you'll use:</label>
+    <div id="transport" class="col-sm-6">
         <input type="checkbox" id="check11"><label for="check11">own car</label>
         <input type="checkbox" id="check12"><label for="check12">rented car</label>
         <input type="checkbox" id="check13"><label for="check13">plain</label>
@@ -49,7 +61,7 @@ The transport you'll use:
         <input type="checkbox" id="check15"><label for="check15">train</label>
         <input type="checkbox" id="check16"><label for="check16">bus</label>
     </div>
-
+   </div>
     Accomodation:
 
     <div id="format1">
