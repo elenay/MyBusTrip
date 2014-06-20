@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>My Bus Trip</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,6 +16,7 @@
     <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="/Users/elenayermakova/RubymineProjects/MyBus/MyBusTrip"></script>
     <script>
         $(function() {
             var bootstrapButton = $.fn.button.noConflict();
@@ -23,7 +24,7 @@
             $( "#datepicker1" ).datepicker();
             $( "#datepicker2" ).datepicker();
             $( "#transport" ).buttonset();
-            $( "#format1" ).buttonset();
+            $( "#accomodation" ).buttonset();
         });
     </script>
     <style>
@@ -31,18 +32,18 @@
     </style>
 </head>
 <body>
-<h1>Welcome to My Bus! start planning your trip here:</h1>
+<h1>Welcome to My Bus! start planning your trip here</h1>
 
     <form class="form-horizontal" role="form">
         <div class="form-group">
-            <label for="inputCountries" class="col-sm-3 control-label">The country/countries of destination:</label>
+            <label for="inputCountries" class="col-sm-3 control-label">The country/countries of destination</label>
             <div class="col-sm-2">
                 <input class="form-control" id="inputCountries" placeholder="type a country name">
             </div>
         </div>
 
   <div class="form-group">
-      <label for="datepicker1" class="col-sm-3 control-label">The dates of the trip:</label>
+      <label for="datepicker1" class="col-sm-3 control-label">The dates of the trip</label>
       <div class="col-sm-3">
           <input class="form-control" id="datepicker1" placeholder="From">
           </div>
@@ -52,7 +53,7 @@
       </div>
 
 <div class="form-group">
- <label for="transport" class="col-sm-3 control-label">The transport you'll use:</label>
+ <label for="transport" class="col-sm-3 control-label">The transport you'll use</label>
     <div id="transport" class="col-sm-6">
         <input type="checkbox" id="check11"><label for="check11">own car</label>
         <input type="checkbox" id="check12"><label for="check12">rented car</label>
@@ -62,20 +63,30 @@
         <input type="checkbox" id="check16"><label for="check16">bus</label>
     </div>
    </div>
-    Accomodation:
 
-    <div id="format1">
+ <div class="form-group">
+    <label for="accomodation" class="col-sm-3 control-label"> Accomodation</label>
+    <div id="accomodation" class="col-sm-6">
         <input type="checkbox" id="check1"><label for="check1">hotel/hostel</label>
         <input type="checkbox" id="check2"><label for="check2">camping</label>
         <input type="checkbox" id="check3"><label for="check3">couchsurfing</label>
         <input type="checkbox" id="check4"><label for="check4">free camp</label>
         <input type="checkbox" id="check5"><label for="check5">night while travelling</label>
     </div>
+     </div>
 
-    Don't forget:
-    <div class="input-group input-group-lg">
+     <div class="form-group">
+         <label for="dontforget" class="col-sm-3 control-label"> Don't forget</label>
+         <div id="dontforget" class="col-sm-4">
         <input type="text" class="form-control" placeholder="Enter whatever details">
+         </div>
     </div>
+
+     <div class="form-group">
+        <div id="submitmain" class="col-sm-offset-2 col-sm-10">
+        <button type="button" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+     </div>
 
 </form>
 
